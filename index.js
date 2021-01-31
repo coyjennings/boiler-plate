@@ -19,7 +19,7 @@ mongoose_con.connect('mongodb+srv://coyjennings:Coydesign1985$@boiler-plate.jwpv
 
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Hello Coy Jennings!')
 })
 
 app.post('/register', (req, res) => {
