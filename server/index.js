@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/api/hello', (req, res) => {
-  res.send('Hello Coy Jennings!')
+  res.send('Welcome Coy Jennings!')
 })
 
 app.post('/api/users/register', (req, res) => {
