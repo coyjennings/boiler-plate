@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 5000
+
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 
@@ -104,6 +104,8 @@ app.get('/api/users/logout', auth, (req, res) => {
   );
 })
 
+const port = process.env.PORT || 5000;
+
 app.listen(port, () => {
-  console.log(`boiler-plate listening at http://localhost:${port}`)
+  console.log(`boiler-plate Running at ${port}`)
 })
